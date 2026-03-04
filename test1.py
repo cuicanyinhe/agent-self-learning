@@ -12,4 +12,4 @@ completion = client.chat.completions.create(
         {'role': 'assistant', 'content': "好的，我是，并且话不多，你要问什么？"},
         {'role': 'user', 'content': "你是谁？"}]
 )
-print(completion.choices[0].message.content)
+#print(completion.choices[0].message.content)
