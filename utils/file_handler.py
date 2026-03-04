@@ -36,7 +36,7 @@ def listdir_with_allowed_type(path: str, allowed_types: tuple[str]): #返回文�
         return  allowed_types
 
     for f in os.listdir(path):
-        if f.endswich(allowed_types):
+        if f.endswith(allowed_types):
             files.append(os.path.join(path, f))
     return tuple(files)
 
@@ -47,4 +47,4 @@ def pdf_loader(filepath: str, passwd= None) -> list[Document]:
 
 
 def txt_loader(filepath: str)-> list[Document]:
-    return TextLoader(filepath).load()
+    return TextLoader(filepath, encoding="utf-8").load()
