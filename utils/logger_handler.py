@@ -48,10 +48,3 @@ def get_logger(
 
 logger = get_logger()
 
-'''
-if __name__ == '__main__':
-    logger.info('信息')
-    logger.error('错误')
-    logger.warning('警告')
-    logger.debug('调试')
-'''

@@ -1,6 +1,6 @@
 import os
 from langchain_core.documents import Document
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from utils.config_handler import chroma_conf
 from model.factory import embed_model
