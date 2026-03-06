@@ -1,0 +1,28 @@
+mcp_servers:
+  #高德地图
+  amap-maps:
+    transport: stdio
+    args: [ "-y", "@amap/amap-maps-mcp-server" ]
+    command: npx
+    env:
+      AMAP_MAPS_API_KEY: "你的高德地图API密钥"
+
+  #fetch网页抓取
+  fetch:
+    transport: stdio
+    args: [ mcp-server-fetch ]
+    command: uvx
+
+  #12306车票查询
+  12306-mcp:
+    transport: stdio
+    args: [ "-y", "12306-mcp" ]
+    command: npx
+
+  #web搜素
+  web-search:
+    transport: sse
+    url: "https://open.bigmodel.cn/api/mcp-broker/proxy/web-search/sse"
+    headers:
+      Authorization: "Your_Zhipu_API_Key"
+

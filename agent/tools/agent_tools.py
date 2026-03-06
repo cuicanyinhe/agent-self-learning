@@ -74,6 +74,3 @@ def fetch_external_data(user_id: str, month: str) -> str:
 def fill_context_for_report():
     return "fill_context_for_report已调用"
 
-
-'''if __name__ == '__main__':
-    print(fetch_external_data("1007", "2025-01"))'''
