@@ -4,7 +4,7 @@ amap-maps:
   args: [ "-y", "@amap/amap-maps-mcp-server" ]
   command: npx
   env:
-    AMAP_MAPS_API_KEY: "你的高德地图API密钥"
+    AMAP_MAPS_API_KEY: "Your_AMAP_MAPS_API_KEY"
 
 #12306车票查询
 12306-mcp:

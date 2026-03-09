@@ -29,11 +29,9 @@ class ReactAgent:
     def _get_custom_tools(self) -> List[BaseTool]:
         
         self.custom_tools = [
-            rag_summarize, 
-            get_weather, 
-            get_user_location,
-            get_user_id, 
-            get_current_month, 
+            rag_summarize,
+            get_user_id,
+            get_current_time,
             fetch_external_data, 
             fill_context_for_report
         ]
@@ -121,7 +119,7 @@ class ReactAgent:
         return "".join(full_response)
 
 
-'''if __name__ == '__main__':
+if __name__ == '__main__':
     import asyncio
 
     async def test():
@@ -130,4 +128,4 @@ class ReactAgent:
         async for chunk in agent.execute_stream("为我生成我的使用报告"):
             print(chunk, end="", flush=True)
 
-    asyncio.run(test())'''
+    asyncio.run(test())
