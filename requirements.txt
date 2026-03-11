@@ -1,2 +1,13 @@
-langchain
-streamlit
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-chroma>=0.2.0
+langchain-text-splitters>=0.3.0
+langchain-mcp-adapters>=0.1.0
+langgraph>=0.2.0
+chromadb>=0.5.0
+dashscope>=1.20.0
+streamlit>=1.55.0
+pyyaml>=6.0
+pypdf>=4.0
+requests>=2.31.0

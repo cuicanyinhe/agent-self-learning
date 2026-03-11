@@ -33,7 +33,8 @@ class ReactAgent:
             get_user_id,
             get_current_time,
             fetch_external_data, 
-            fill_context_for_report
+            fill_context_for_report,
+            get_weather
         ]
         
         logger.info(f"✅ 加载了 {len(self.custom_tools)} 个自定义工具")
@@ -125,7 +126,7 @@ if __name__ == '__main__':
     async def test():
         agent = await ReactAgent().initialize()
 
-        async for chunk in agent.execute_stream("为我生成我的使用报告"):
+        async for chunk in agent.execute_stream("告诉我明天重庆的天气"):
             print(chunk, end="", flush=True)
 
     asyncio.run(test())
